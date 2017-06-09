@@ -770,11 +770,11 @@ function backup(){
 			fs.writeFile(historyFile, fileUpdate, function(err){ if(err) console.log(err); });
 		}
 		var logData;
-		if(status !== 'Error'){
+		if(status !== undefined && status !== 'Error'){
 			logData = fix_date + ' ' + time.replace(timeH, parseInt(timeH) + timeOffset) + ' | ' + 'GPS ' + status + ' | ' + latitude_dd + ' | ' + longitude_dd + ' | ' + speedKmh + ' km/h | ' + mapLink + ' | ' + accel_x + ' | ' + accel_y + ' | ' + accel_z + '\n';
 			fs.appendFile(historyFile, logData, function(err){ if(err) console.log(err); });
 		}
-		else if(time !== undefined){
+		else if(status !== undefined){
 			logData = fix_date + ' ' + time.replace(timeH, parseInt(timeH) + timeOffset) + ' | ' + 'GPS ' + status + ' | ' + accel_x + ' | ' + accel_y + ' | ' + accel_z + '\n';
 			fs.appendFile(historyFile, logData, function(err){ if(err) console.log(err); });
 		}

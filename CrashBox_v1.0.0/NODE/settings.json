@@ -4,5 +4,6 @@
 	"noAlarm" : false,
 	"disableSecretCodes" : false,
 	"historyFile" : "public/history.txt",
-	"accidentDirectory" : "accident"
+	"accidentDirectory" : "accident",
+	"serverPort" : 8080
 }

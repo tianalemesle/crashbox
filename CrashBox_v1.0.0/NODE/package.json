@@ -5,14 +5,11 @@
   "main": "server.js",
   "dependencies": {
     "adxl345-sensor": "^0.0.8",
+    "ip": "^1.1.5",
     "pigpio": "^0.5.1",
     "serialport": "^4.0.7"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "sudo node server.js",
-    "start": "sudo node server.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TeamCrash/crashbox.git"

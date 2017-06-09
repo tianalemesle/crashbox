@@ -7,7 +7,8 @@ var detectionLimit = settings.detectionLimit, // Nombre de G à partir duquel on
 	noAlarm = settings.noAlarm, // Variable pour rendre le boitier muet (en phase de tests)
 	disableSecretCodes = settings.disableSecretCodes, // Variable pour desactiver les actions speciales au clavier
 	historyFile = settings.historyFile // Fichier de log
-	accidentDirectory = settings.accidentDirectory; // Emplacement des sauvegardes de log en cas d'accident
+	accidentDirectory = settings.accidentDirectory, // Emplacement des sauvegardes de log en cas d'accident
+	serverPort = settings.serverPort; // Port du serveur web
 
 // Les variables suivantes ne doivent pas être changées ici (elles évoluent au cours de la progression du programme)
 var phoneNumber = ""; // Numero de telephone d'urgence
@@ -136,7 +137,7 @@ function requestHandler(req, res){
 	getFile((localFolder + fileName),res,page404,extensions[ext]);
 };
 
-var myServer = http.createServer(requestHandler).listen(8080);
+var myServer = http.createServer(requestHandler).listen(serverPort);
 
 console.log('Node server is running on http://' + ip.address() + ':8080');
 

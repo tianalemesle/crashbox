@@ -139,7 +139,7 @@ function requestHandler(req, res){
 
 var myServer = http.createServer(requestHandler).listen(serverPort);
 
-console.log('Node server is running on http://' + ip.address() + ':8080');
+console.log('Node server is running on http://' + ip.address() + ':' + serverPort);
 
 /* ==== SOCKET.IO ==== */
 
@@ -770,7 +770,7 @@ function backup(){
 			fs.writeFile(historyFile, fileUpdate, function(err){ if(err) console.log(err); });
 		}
 		var logData;
-		if(status !== 'Error'){
+		if(status !== 'Error' && time !== undefined){
 			logData = fix_date + ' ' + time.replace(timeH, parseInt(timeH) + timeOffset) + ' | ' + 'GPS ' + status + ' | ' + latitude_dd + ' | ' + longitude_dd + ' | ' + speedKmh + ' km/h | ' + mapLink + ' | ' + accel_x + ' | ' + accel_y + ' | ' + accel_z + '\n';
 			fs.appendFile(historyFile, logData, function(err){ if(err) console.log(err); });
 		}

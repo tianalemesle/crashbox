@@ -1,0 +1,8 @@
+{
+	"detectionLimit" : 3,
+	"timeOffset" : 2,
+	"noAlarm" : false,
+	"disableSecretCodes" : false,
+	"historyFile" : "public/history.txt",
+	"accidentDirectory" : "accident"
+}

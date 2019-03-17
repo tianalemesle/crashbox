@@ -13,8 +13,8 @@ Pour notre projet de spécialité, nous avons créé un boitier détecteur d'acc
 
 ![Schéma fonctionnel](https://cdn.rawgit.com/TeamCrash/crashbox/master/Fonctionnel_v3.3.png)
 
- - Raspberry Pi 3 : 40€ ([Amazon](https://www.amazon.fr/Raspberry-Pi-Carte-M%C3%A8re-Model/dp/B01CCOXV34/))
- - Arduino Uno : 20€ ([Site officiel](https://store.arduino.cc/arduino-uno-rev3))
+ - Raspberry Pi 3 model b : 40€ ([Amazon](https://www.amazon.fr/Raspberry-Pi-Carte-M%C3%A8re-Model/dp/B01CCOXV34/))
+ - Arduino Uno R3 : 20€ ([Site officiel](https://store.arduino.cc/arduino-uno-rev3))
  - Arduino Shield GSM v2 : 72€ ([Site officiel](https://store.arduino.cc/arduino-genuino/arduino-genuino-shields/arduino-gsm-shield-2-integrated-antenna))
  - GlobalSat G-STAR IV : 35€ ([Amazon](https://www.amazon.fr/USG-SiRFIV-USB-GPS-Receiver/dp/B008200LHW/))
  - ADXL345 : 2€ ([Amazon](https://www.amazon.fr/SODIAL-ADXL345-Digital-Acceleration-dinclinaison/dp/B00KBPR3E0/))
